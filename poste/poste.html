@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURRIER INTERATIONAL</title>
+    <link rel="icon" href="mmm.ico">
+    <link rel="stylesheet" href="poste.css">
+</head>
+<body background="courrier.png">
+    <p>
+        <form action="poste.php" method="post">
+            <h1>POSTE NATIONALE</h1>
+            <h2>BIENVENUE</h2>
+            <h3><font color="green">Remplissez ce formulaire</font></h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><label for="expedition">Expediteur</label> <input type="text" name="expedition" placeholder="alex" required></td>
+                    <td><label for="destination">Destinataire</label> <input type="text" name="destination" placeholder="kayzer" required></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="ville">Ville</label>
+                        <select name="ville" id="ville" required>
+                            <option value="votre ville"disable selected hidden>Votre ville</option>
+                            <optgroup label="Lualaba">
+                                <option value="kolwezi">Kolwezi</option>
+                                <option value="musumba">Musumba</option>
+                            </optgroup>
+                            <optgroup label="Haut-katanga">
+                                <option value="Lubumbashi">Lubumbashi</option>
+                                <option value="likasi">Likasi</option>
+                            </optgroup>
+                            <optgroup label="Haut-lomami">
+                                <option value="kalemi">Kalemi</option>
+                                <option value="moba">Moba</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="rue">Nro Rue</label> <input type="text" name="rue" id="rue" placeholder="198 kasapa" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="preference">Preference</label>
+                    <table align="CENTER">
+                            <tr><td><input type="checkbox" name="preference[]" id="recommande" value="recommande"> <label for="recommande">Recommande</label></td></tr>
+                            <tr><td><input type="checkbox" name="preference[]" id="simple" value="simple"> <label for="simple">Simple</label></td></tr>
+                            <tr><td><input type="checkbox" name="preference[]" id="rapide" value="rapide"><label for="rapide">Rapide</label></td></tr>
+                            <tr><td><input type="checkbox" name="preference[]" id="electronique" value="electronique"><label for="electronique">Electronique</label></td></tr>
+                    </table>
+                    </td>
+                    <td>
+                        <label for="description">Description Courrier</label><br>
+                        <textarea id="description" cols="35" rows="5" name="description" placeholder="bonjour, mon colis est ..."></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date</label> <input name="date" type="date"></td>
+                </tr>
+            </table>
+            <button type="submit">EXPEDIER</button>
+        </form>
+</body>
+</html>
