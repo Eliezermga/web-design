@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire de voyage</title>
+    <link rel="stylesheet" href="../view/css/style.css">
+    <link rel="icon" href="../view/img/avis.ico">
+</head>
+<body> 
+    <p>
+        <form action="traitervoyage.php" method="post">
+            <h1>VOYAGE</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><label for="Départ">Départ</label> <input type="date" name="depart" required></td>
+                    <td><label for="Arrivée">Arrivée</label> <input type="date" name="arrivée" required></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="TRANSPORT">TRANSPORT</label>
+                        <select name="TRANSPORT" id="TRANSPORT" required>
+                            <option value="vous voulez"disable selected hidden>Vous voulez</option>
+                            <optgroup label="AVION">
+                                <option value="CCA">CAA</option>
+                                <option value="CONGO AIR">CONGO AIR</option>
+                            </optgroup>
+                            <optgroup label="BUS">
+                                <option value="MULYKAP SA">MULYKAP SA</option>
+                                <option value="CLASSIC COACH">CLASSIC COACH</option>
+                            </optgroup>
+                            <optgroup label="TRAIN">
+                                <option value="CNCC">CNCC</option>
+                                <option value="ELIEZER TRAIN">VGA</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="PRIX">PRIX EN USD</label> <input type="number" min="500" max="250000" name="Prix" id="Prix" placeholder="$" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="REPAS">REPAS</label>
+                    <table align="CENTER">
+                            <tr><td><input type="checkbox" name="REPAS[]" id="vello" value="PIZZA"> <label for="PIZZA">PIZZA</label></td></tr>
+                            <tr><td><input type="checkbox" name="REPAS[]" id="football" value="CHICUGNA"> <label for="CHICUGNA">CHOCUGNA</label></td></tr>
+                            <tr><td><input type="checkbox" name="REPAS[]" id="cinema" value="POULET"><label for="POULET">POULET</label></td></tr>
+                            <tr><td><input type="checkbox" name="REPAS[]" id="sport" value="POISSON"><label for="POISSON">POISSON</label></td></tr>
+                    </table>
+                    </td>
+                    <td>
+                        <label for="BOISSON">BOISSON</label>
+                        <select name="BOISSON" id="BOISSON" required>
+                            <option value="VOUS BUVEZ"disable selected hidden>VOUS BUVEZ</option>
+                            <optgroup label="BEER">
+                                <option value="SIMBA">SIMBA</option>
+                                <option value="N'TAY">N'TAY</option>
+                            </optgroup>
+                            <optgroup label="SUCRE">
+                                <option value="BORA">BORA</option>
+                                <option value="FANTA">FANTA</option>
+                            </optgroup>
+                            <optgroup label="EAU">
+                                <option value="DASANI">DASANI</option>
+                                <option value="CANADIAN PURE">CANADIAN PURE</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <label for="AVIS">MES AVIS</label><br>
+            <textarea id="AVIS" cols="70" rows="10" name="AVIS" placeholder="bonjour, ..."></textarea><br>
+            <button type="submit">VALIDE</button>
+        </form>
+
+    </p>
+</body>
+</html>

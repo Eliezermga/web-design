@@ -1,0 +1,21 @@
+body{
+    margin: 0%;
+    background-image: url(../img/img.jpg);
+    font-family: sans-serif;
+}
+#madiv{
+    margin: auto;
+    background-color: rgb(141, 201, 254);
+    width: 60%;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 200px;
+}
+h1{
+    padding-top: 2%;
+}
+#madiv2{
+    background-color: rgba(165, 210, 250, 0.534);
+    border-radius: 10px;
+    height: 8cm;
+}
