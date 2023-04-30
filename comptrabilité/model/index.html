@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILAN COMPTABLE</title>
+    <link rel="icon" href="../view/img/gagner-de-largent.png    ">
+    <link rel="stylesheet" href="../view/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>        
+            <span class="lettre">B</span>
+            <span class="lettre">I</span>
+            <span class="lettre">L</span>
+            <span class="lettre">A</span>
+            <span class="lettre">N</span>
+        </h1>
+      </header>
+    <div id="actif">
+        <header class="header1">
+            <h1>actif</h1>
+          </header>
+    <div id="container">
+        <div id="madiv" class="input">
+            N°de compte: <input id="num" type="number" min="201" max="599" placeholder="311"/>
+        </div>
+        <div  class="input">
+            Intitulé de compte: <input id="compte" type="text"  placeholder="Marchandise"/>
+        </div>
+        <div class="input">
+            Montant: <input id="montant" type="number" min="1000"  placeholder="1000 en CDF"/>
+        </div>
+        <button id="entry">Ajouté</button>
+        
+    </div>
+
+    <table id="display" border="1">
+        <tr>
+            <th width="45px">N°</th>
+            <th>Intitulé de compte</th>
+            <th>Montant</th>
+        </tr>
+        <tr>
+            <td >TOTAL</td>
+            <td></td>
+            <td><span id="sumV"></span></td>
+            
+        </tr>
+    </table>
+    </div>
+
+
+    <div id="passif">
+        <header class="header1">
+            <h1>passif</h1>
+          </header>
+    <div id="container1">
+        <div id="madivp" class="inputp">
+            N°de compte: <input id="nump" type="number" min="10" max="599" placeholder="10"/>
+        </div>
+        <div  class="inputp">
+            Intitulé de compte: <input id="comptep" type="text"  placeholder="capital"/>
+        </div>
+        <div class="inputp">
+            Montant: <input id="montantp" type="number" min="1000"  placeholder="1000 en CDF"/>
+        </div>
+        <button id="entryp">Ajouté</button>
+    </div>
+
+    <table id="displayp">
+        <tr>
+            <th width="45px">N°</th>
+            <th>Intitulé de compte</th>
+            <th>Montant</th>
+        </tr>
+        <tr>
+            <td colspan="2">TOTAL</td>
+            <td><span id="sumVal"></span></td>
+        </tr>
+    </table>
+    </div>
+    
+
+    <script src="../view/script.js"></script>
+</body>
+</html>
