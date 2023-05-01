@@ -112,6 +112,19 @@ td{
     color: #4848486b;
     animation: flash 3s linear infinite;
 }
+#liste{
+    font-size: 100%;
+    width: 40%;
+    padding: 5px 10px;
+    margin: 8px 0 auto 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+option{
+    width: 90%;
+}
 @keyframes flash {
     0% {
         color: #ffffff;
