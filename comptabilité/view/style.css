@@ -8,19 +8,19 @@ html{
 .input{
     font-size: 20px;
     margin: 5px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 .inputp{
     font-size: 20px;
     margin: 5px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 input[type=text], input[type=number] {
     width: 90%;
     padding: 5px 10px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
     border-radius: 10px;
    }
@@ -29,14 +29,14 @@ input[type=text], input[type=number] {
     padding: 5px 20px;
     margin: 8px 0 0 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
     border-radius: 10px;
 }
 #entry:hover {
     background-color: rgba(14, 2, 2, 0.493);
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     width: 31%;
     padding: 4px;
@@ -46,14 +46,14 @@ input[type=text], input[type=number] {
     padding: 5px 20px;
     margin: 8px 0 0 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
     border-radius: 10px;
 }
 #entryp:hover {
     background-color: rgba(14, 2, 2, 0.493);
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     width: 31%;
     padding: 4px;
@@ -67,7 +67,7 @@ table{
 table, th, td{
     border: 1px solid black;
     padding: 5px;
-    background-color: #ffffff13;
+    background-color: rgba(255, 255, 255, 0.075);
 }
 th{
     font-size: 20px;
@@ -83,16 +83,16 @@ td{
     text-align: center;
     text-transform: uppercase;
     padding: 32px;
-    background-color: #0a0a23f3;
-    color: #fff;
-    border-bottom: 2px solid #ffffff
+    background-color: rgba(10, 10, 35, 0.953);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255)
 }
 .header1{
     text-align: center;
     text-transform: uppercase;
     padding: 15px;
-    background-color: #0a0a236c;
-    color: #fff;
+    background-color: rgba(10, 10, 35, 0.424);
+    color: rgb(255, 255, 255);
 }
 #actif{
     width: 49.9%;
@@ -105,11 +105,11 @@ td{
     float: left;
     width: 49.9%;
     background-color: rgb(45, 87, 116);
-    border-left: 1px solid #fff;
+    border-left: 1px solid hwb(0 100% 0%);
     border-bottom-left-radius: 10px;
 }
 .lettre {
-    color: #4848486b;
+    color: rgba(72, 72, 72, 0.42);
     animation: flash 3s linear infinite;
 }
 #liste{
@@ -118,22 +118,22 @@ td{
     padding: 2px 10px;
     margin: 8px 0 auto 5px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
     border-radius: 10px;
 }
 @keyframes flash {
     0% {
-        color: #ffffff;
-        text-shadow: 0 0 7px #00ffea;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 7px rgb(0, 255, 234);
     }
     90% {
-        color: #4848484f;
+        color: rgba(72, 72, 72, 0.31);
         text-shadow: none;
     }
     100% {
         color:rgb(45, 87, 116);
-        text-shadow: 0 0 7px #0077ff;
+        text-shadow: 0 0 7px rgb(0, 119, 255);
     }
 }
 
@@ -157,7 +157,7 @@ td{
         width: 100%;
         border-right: 0px;
         border-bottom-right-radius: 0px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgb(255, 255, 255);
     }
     #passif{
         width: 100%;
@@ -173,7 +173,7 @@ td{
     }
     #passif{
         width: 50%;
-        border-left: 0px solid #fff;
+        border-left: 0px solid rgb(255, 255, 255);
         border-bottom-left-radius: 0px;
     }
 }
