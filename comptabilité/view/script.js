@@ -38,7 +38,7 @@ function getSum()
          sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
   }
   document.getElementById("sumV").innerHTML = sumVal;
-   console.log("Sum => "+sumVal);       
+   console.log("Sum => "+sumVal);        
 }
 
 
