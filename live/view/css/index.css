@@ -1,0 +1,215 @@
+#corps{
+    margin: 0%;
+    font-family: sans-serif;
+}
+#tete{
+    background: linear-gradient(to right top,rgb(0, 0, 0), rgb(255, 255, 255));
+}
+#logo{
+    width: 5%;
+    margin-left: 15%;
+    margin-top: 0.5%;
+}
+.nag{
+    position: absolute;
+    right: 15%;
+    top: 2%;
+}
+nav ul{
+    background-color: rgba(127, 255, 212, 0);
+    overflow: hidden;
+    padding: 0%;
+    text-align: center;
+    margin: 0%;
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+   
+}
+nav ul li:hover{
+    background-color: black;
+    color: #fff;
+}
+.text{
+    position: absolute;
+    border-radius: 10px;
+    font-size: larger;
+    color: #fff;
+    left: 15%;
+    top: 45%;
+}
+.btn{
+    background: linear-gradient(to right top,rgb(68, 0, 255), rgb(169, 0, 221));
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: large;
+    margin: 20px 20px;
+}
+.btn:hover{
+    background-color: rgb(249, 243, 255);
+    color: #fff;
+}
+.phot{
+    margin-left: 53%;
+}
+#cou{
+    display: inline-flex;
+    
+}
+.text2{
+    width: 25%;
+    height: 25%;
+    margin-top: 8%;
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+.phot2{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+#vent{
+    background-color: rgba(236, 236, 236, 0.671);
+    display: flex;
+    left: 80px;
+}
+.tpr{
+    position: absolute;
+    left: 45%;
+    top: 202%;
+}
+#prd{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 5%;
+    border-radius: 19px;
+    margin-left: 16%;
+}
+#prd1{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 5%;
+    border-radius: 19px;
+}
+#prd2{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 5%;
+    border-radius: 19px;
+}
+.lll{
+    width: 80%;
+    position: relative;
+    margin-left: 05%;
+    top: 3%;
+    
+}
+.itext{
+    position: relative;
+    left: 50px;
+    top: 7%;
+    font-size: 20px;
+}
+.iitext{
+    position: relative;
+    left: 20px;
+    top: 7%;
+    font-size: 20px;
+}
+.mga{
+    position: absolute;
+    top: 267%;
+    left: 46%;
+}
+.mrg{
+    background: linear-gradient(to right top,rgb(68, 0, 255), rgb(169, 0, 221));
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 20px 20px;
+}
+#cuisse{
+}
+.cui1{
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.kal{
+    padding: 15px;
+    width: 20%;
+}
+.cui2{
+    margin-left: 10%;
+    display: flex;
+    display: flex;
+    text-align: center;
+}
+.kal1{
+    padding: 15px;
+    width: 20%;
+}
+#mole{
+    background-color: rgba(236, 236, 236, 0.671);
+}
+.K12{
+    display: flex;
+    margin-left: 20%;
+}
+.k11{
+    margin-top: 5%;
+}
+.k111{
+    width: 30%;
+    height: min-content;
+    margin-top: 11%;
+    margin-bottom: 15%;
+}
+.num{
+    background: linear-gradient(to right top,rgb(68, 0, 255), rgb(169, 0, 221));
+    margin-top: 5%;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+}
+#pied{
+    background: linear-gradient(to top right ,rgba(0, 0, 0, 0.632), rgb(255, 255, 255));
+    height: 5cm;
+}
+#end{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.kapend{
+    display: flex;
+    margin-left: 20%;
+}
+.alex{
+    padding: 5px;
+    width: 50%;
+    background-color: #ffffff26;
+    border-bottom-left-radius: 20px;
+}
+.alex1{
+    padding: 5px;
+    width: 50%;
+    background-color: #ffffff26;
+    border-bottom-right-radius: 20px;
+}
+
+#kadia{
+    width: 10%;
+}
