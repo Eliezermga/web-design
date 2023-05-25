@@ -10,6 +10,7 @@ io.on('connection', (socket) => {
       console.log('message: ' + msg);
     });
   });
+  
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
@@ -17,7 +18,7 @@ app.get('/', (req, res) => {
 
 
 server.listen(3000, () => {
-  console.log('listening on *:3000');
+  console.log('listé sur le port :3000');
 });
 
 io.emit('some event', { someProperty: 'some value', otherProperty: 'other value' }); // This will emit the event to all connected sockets
