@@ -6,12 +6,14 @@
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/chat.png">
+
   </head>
   <body>
     <header class="header">
       <h1>galerie de photos css flexbox</h1>
     </header>
     <div class="gallery">
+      <IMG id="imgDog"></IMG>
       <img src="img/1.jpg" alt="premier">
       <img src="img/2.jpg" alt="deuxieme">
       <img src="img/3.jpg" alt="troisieme">
@@ -22,5 +24,10 @@
       <img src="img/8.jpg" alt="huitieme">
       <img src="img/9.jpg" alt="neuvieme">
     </div>
+    <script>
+      fetch(" https://randomuser.me/api/"+ "image/random")
+      .then(response => response.json())
+      .then(data => imgDog.src = data.message);
+    </script>
   </body>
 </html>
