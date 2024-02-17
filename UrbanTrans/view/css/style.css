@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.titre {
+    background-color: black;
+    height: 100vh;
+}
+
+.photo_1 {
+    text-align: center;
+}
+
+.name {
+    color: rgb(243, 190, 19);
+    text-align: center;
+    margin-top: 45px;
+}
+
+.ecrit {
+    color: black;
+    background-color: rgb(243, 190, 19);
+    margin-left: 20px;
+}
+
+button {
+    height: 35px;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 45px;
+}
+
+.best {
+    height: 400px;
+    background-color: rgb(243, 190, 19);
+    margin-top: -25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titre_2 {
+    text-align: center;
+}
+
+.titre_2 h4 {
+    color: rgb(221, 195, 145);
+}
+
+.phot {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid black;
+    height: 480px;
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 25px 25px 25px -25px black;
+}
+
+.yellow {
+    background-color: rgb(243, 190, 19);
+    color: black;
+}
+
+.WE {
+    background-color: black;
+    color: rgb(243, 190, 19);
+    height: 550px;
+}
+
+.WE h3 {
+    color: #fff;
+}
+
+.titre_3 {
+    text-align: center;
+}
+
+.compliquer_3 {
+    text-align: end;
+    margin-top: -115px;
+    margin-right: 25px;
+}
+
+.compliquer_5 {
+    text-align: end;
+    margin-top: -115px;
+    margin-right: 25px;
+}
+
+.compliquer_2 {
+    margin-left: 45px;
+}
+
+.com {
+    text-align: center;
+}
+
+.com button {
+    background-color: rgb(243, 190, 19);
+    color: black;
+}
+
+.dowl {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.lala {
+    margin-top: 45px;
+}
+
+.pl {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.lien {
+    margin-top: 45px;
+    display: flex;
+}
+
+.fin {
+    background-color: black;
+    color: #fff;
+    margin-top: -25px;
+}
+
+.ligne {
+    background-color: rgb(243, 190, 19);
+    height: 3px;
+    width: 120px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.un {
+    margin: 15px;
+    margin-top: 20px;
+}
+
+.gros {
+    background-color: rgb(243, 190, 19);
+    border: 0.1px solid black;
+    text-align: center;
+    width: 90%;
+    color: black;
+    margin-left: 40px;
+}
+
+.happy {
+    text-align: center;
+}
+
+.happy h4 {
+    color: rgb(243, 190, 19);
+}
+
+.long {
+    margin-top: 25px;
+    height: 20px;
+}
+
+.larg {
+    margin-top: 25px;
+    height: 60px;
+}
+
+/* Media queries pour la réactivité */
+@media only screen and (max-width: 600px) {
+
+    .titre {
+        height: 300px;
+    }
+
+    .name {
+        margin-top: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .img {
+        height: 300px;
+        width: 200px;
+    }
+}

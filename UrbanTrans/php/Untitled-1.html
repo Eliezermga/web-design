@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de Distance</title>
+</head>
+<body>
+
+    <h1>Calcul de Distance entre deux éléments</h1>
+
+    <label for="villeDepart">Ville de Départ:</label>
+    <select id="villeDepart">
+        <option value="paris">Paris</option>
+        <option value="lyon">Lyon</option>
+        <option value="marseille">Marseille</option>
+        <!-- Ajoutez d'autres options selon vos besoins -->
+    </select>
+
+    <label for="villeArrivee">Ville d'Arrivée:</label>
+    <select id="villeArrivee">
+        <option value="paris">Paris</option>
+        <option value="lyon">Lyon</option>
+        <option value="marseille">Marseille</option>
+        <!-- Ajoutez d'autres options selon vos besoins -->
+    </select>
+
+    <button onclick="calculerDistance()">Calculer la Distance</button>
+
+    <p id="resultatDistance"></p>
+
+    <script>
+        function calculerDistance() {
+            var villeDepart = document.getElementById("villeDepart").value;
+            var villeArrivee = document.getElementById("villeArrivee").value;
+
+            // Ici, vous pouvez implémenter la logique de calcul de distance entre les deux villes
+            // Cela pourrait impliquer une API de cartographie ou une formule basée sur la latitude/longitude, selon vos besoins.
+
+            // Exemple de résultat fictif pour la démonstration
+            var distance = Math.floor(Math.random() * 1000); // Distance aléatoire en kilomètres
+
+            document.getElementById("resultatDistance").innerText = "Distance entre " + villeDepart + " et " + villeArrivee + ": " + distance + " km";
+
+            // Ajout du lien
+            var lien = document.createElement("a");
+            lien.href = "#"; // Remplacez "#" par l'URL souhaitée
+            lien.innerText = "Voir plus d'informations sur la distance";
+            lien.style.display = "block"; // Affiche le lien comme un bloc
+            lien.style.marginTop = "10px"; // Ajoute un espacement
+            document.body.appendChild(lien);
+        }
+    </script>
+
+</body>
+</html>

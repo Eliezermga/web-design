@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>UrbanTrans</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <link rel="shortcut icon" href="../taxi.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css">
+  </head>
+
+	<body class="landing is-preload">
+    <div id="page-wrapper">
+    <header id="header" class="alt">
+      <h1><a href="../index.html">UrbanTrans</a></h1>
+      <nav id="nav">
+        <ul>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="client/contact.html">A Propos</a></li>
+                <li><a href="../php/index.php">Se  connecter</a></li>
+                <li><a href="../php/register.php">S'inscrire</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <div class="inner">
+        <h2>UrbanTrans</h2>
+        <p>N'hesitez pas <br />
+          Ici vous pouvez nous conntacter<br />
+          </p>
+        <ul class="actions special">
+          <li><a href="#rating" class="button primary">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#one" class="more scrolly">Lire plus</a>
+    </section>
+
+
+
+    <section id="one" class="wrapper style1 special">
+      <div class="inner">
+        <article>
+            <h2>Notre Vision</h2>
+            <p>Chez UrbanTrans, nous croyons que chaque trajet devrait être une expérience agréable. Notre vision consiste à
+                transformer la façon dont les gens se déplacent en ville en offrant des solutions de transport innovantes,
+                pratiques et respectueuses de l'environnement.</p>
+            <p>Nous comprenons que le temps est précieux, c'est pourquoi nous mettons l'accent sur la ponctualité et
+                l'efficacité. Nos chauffeurs expérimentés sont dédiés à vous offrir des trajets sans souci, que ce soit
+                pour vous rendre au travail, à un rendez-vous ou pour découvrir les attractions de la ville.</p>
+        </article>
+
+       
+            <h2>Technologie pour Faciliter la Mobilité</h2>
+            <p>Grâce à notre application conviviale, réserver un trajet avec UrbanTrans n'a jamais été aussi simple.
+                Gérez vos réservations, suivez votre chauffeur en temps réel et profitez de fonctionnalités intuitives
+                pour une expérience de déplacement fluide.</p>
+        </article>
+ 
+    </div>
+    </section>
+
+
+    <form  id="rating" action="#">
+      
+      <h1 id="title">Contact</h1>
+      <p id="description" class="description">Merci de bien vouloir remplir ce formulaire.</p>
+      <div class="rating">
+        <label id="name-label" for="nom"><span class="heading">Nom</span></label>
+        <input id="nom" name="nom" type="text" placeholder="Inserrez votre nom complet" required/>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email"><span class="heading">Email</span></label>
+        <input id="email" name="email" type="email" placeholder="Entrez votre adresse email" />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="telephone"><span class="heading">Numero de telephone</span></label>
+        <input id="telephone" name="telephone" type="tel" min="1" max="50" placeholder="Entrez votre numero de telephone" />
+      </div>
+
+     
+      <h3>Notez notre service</h3>
+      <select id="rating">
+      <option value="5">5 étoile</option>
+                <option value="4">4 étoiles</option>
+                <option value="3">3 étoiles</option>
+                <option value="2">2 étoiles</option>
+                <option value="1">1 étoiles</option>
+              </select>
+
+     
+        <p class="heading">Laissez un message:</p>
+        <textarea id="avis" name="avis" rows="4" cols="30" placeholder="Votre message..." class="textarea"></textarea>
+        <input onclick="submitRating()" type="submit"></input>
+      </div>
+    </form>
+
+
+
+
+    <section id="cta" class="wrapper style4">
+      <div class="inner">
+        <header>
+          <h2>Avez-vous besoin d'aide?</h2>
+          <p>N'hesitez pas à cliquer sur Aide</p>
+        </header>
+        <ul class="actions stacked">
+          <li><a href="../php/index.php" class="button fit primary">Connexion</a></li>
+          <li><a href="aide.html" class="button fit">AIDE</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; UB</li><li>Design: <a href="">GROUPE 5</a></li>
+      </ul>
+    </footer>
+
+
+
+
+    
+      <script>
+            function submitRating() {
+              var inputElement =
+            document.getElementById("nom");
+            var contenu = inputElement.value;
+              alert('Merci pour votre message ' + contenu +' nous vous repondons  dans les meilleurs délais');
+            }
+      </script>
+
+
+
+
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+  </body>     
+</html>
