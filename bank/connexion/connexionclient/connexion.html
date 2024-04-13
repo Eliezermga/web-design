@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>connexion</title>
+    <link rel="stylesheet" href="connexion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <div class="form-box">
+            <div class="form">
+                <form class="connexion" action="conn.php" method="post">
+                    <center>
+                        <h1 class="gr-titre">Se connecter</h1>
+                    </center>
+                    <input type="text" placeholder="Adresse email" name="No" required/>
+                    <input type="password" placeholder="Mot de passe " name="ppp" required/>
+                    <button>se connecter</button>
+                    <p class="message">pas de compte ? <a href="#">créer un compte</a></p>
+                </form>
+                <form class="creation" action="creer.php" method="post">
+                    <center>
+                        <h1 class="gr-titre">crée le compte</h1>
+                    </center>
+                    <input type="text" placeholder="Nom d'utilisateur" name="No" required/>
+                    <!--<input type="email" placeholder="Addresse email"/>-->
+                    <input type="password" placeholder="mot de passe" name="ppp" required/>
+                    <button type="submit">crée le compte</button>
+                    <p class="message">vous avez deja un compte ?<a href="#">se connecter</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+    </script>
+</body>
+
+</html>

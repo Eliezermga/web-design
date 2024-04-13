@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(banque.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: change 10s infinite ease-in-out;
+}
+
+.form-box {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.gr-titre {
+    color: gold;
+    padding-bottom: 20px;
+}
+
+.form {
+    padding: 45px;
+}
+
+.form input {
+    font-family: sans-serif;
+    border-radius: 15px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form button {
+    border-radius: 15px;
+    font-family: sans-serif;
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    background: rgb(253, 240, 163);
+}
+
+.form .message {
+    font-size: 15px;
+    margin: 15px 0 0;
+    color: white;
+}
+
+.form .message a {
+    color: gold;
+    text-decoration: none;
+}
+
+.form .creation {
+    display: none;
+}
