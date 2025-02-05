@@ -26,12 +26,14 @@
 }
 body {
   background: var(--primary-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 .header,
 .chat-list .message,
 .typing-form {
   margin: 0 auto;
   max-width: 980px;
+  transition: background-color 0.3s, color 0.3s;
 }
 .header {
   margin-top: 6vh;
@@ -51,7 +53,7 @@ body.hide-header .header {
   width: fit-content;
   font-size: 3rem;
   background-clip: text;
-  background: linear-gradient(to right, #4285f4, #d96570);
+  background: linear-gradient(to right, #42f4bf, #ffe608);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

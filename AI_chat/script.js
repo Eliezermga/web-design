@@ -6,8 +6,8 @@ const deleteChatButton = document.querySelector("#delete-chat-button");
 // State variables
 let userMessage = null;
 let isResponseGenerating = false;
-// API configuration
-const API_KEY = "PASTE-YOUR-API-KEY"; // Your API key here
+// API configurationà_çàç__________________________à_çççççççà_çççç
+const API_KEY = "AIzaSyCX9hJ5rbiSVHD_CUs7InCOc0qMhLmdL6c"; // Your API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 // Load theme and chat data from local storage on page load
 const loadDataFromLocalstorage = () => {
@@ -77,7 +77,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
 // Show a loading animation while waiting for the API response
 const showLoadingAnimation = () => {
   const html = `<div class="message-content">
-                  <img class="avatar" src="https://i.postimg.cc/hP2WrQTQ/Gemini-August-Release-SS-width-1300.jpg" alt="Gemini avatar">
+                  <img class="avatar" src="LexIa.png" alt="LexIa avatar">
                   <p class="text"></p>
                   <div class="loading-indicator">
                     <div class="loading-bar"></div>
@@ -104,7 +104,7 @@ const handleOutgoingChat = () => {
   if(!userMessage || isResponseGenerating) return; // Exit if there is no message or response is generating
   isResponseGenerating = true;
   const html = `<div class="message-content">
-                  <img class="avatar" src="https://i.postimg.cc/L8hd043C/images.png" alt="User avatar">
+                  <img class="avatar" src="user.png" alt="User avatar">
                   <p class="text"></p>
                 </div>`;
   const outgoingMessageDiv = createMessageElement(html, "outgoing");
@@ -124,7 +124,7 @@ toggleThemeButton.addEventListener("click", () => {
 });
 // Delete all chats from local storage when button is clicked
 deleteChatButton.addEventListener("click", () => {
-  if (confirm("Are you sure you want to delete all the chats?")) {
+  if (confirm("Êtes-vous sûr de vouloir supprimer toutes les conversations ?")) {
     localStorage.removeItem("saved-chats");
     loadDataFromLocalstorage();
   }
